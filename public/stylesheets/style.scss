@@ -1,49 +1,32 @@
+@import 'partials/base';
+@import 'partials/header';
+@import 'partials/box-shadows';
+@import 'partials/colors';
 
 
-
-* {
-    box-sizing: border-box;
-    padding: 5px 10px;
-    text-align: center;
+header {
+    @include principlesHeader();
 }
 
-#ULTRATITLE {
-    display: block;
-    background: linear-gradient(to bottom right, red, green, blue);
-    border: 1px solid black;
-    width: 100%;
-}
-
-#IPT {
-    width: 100%;
-    min-width: 700px;
-    height: 80px;
-    text-align: center;
-    background: linear-gradient(to bottom right, rgb(0, 0, 0), red);
-    position: absolute;
-    top: 80px;
-    left: 0;
-    box-shadow: 0 3px 3px rgb(0,0,0);
-    color: aliceblue;
-    margin-top: 0px;
-    display: block; 
+#ULTRATITLE { 
+    background: linear-gradient(to bottom right, $facebook-dark-blue, $facebook-light-grey);
 }
 
 nav {
-    display: grid;
     width: 60%;
-    margin: 100px auto;
-    background: linear-gradient(to bottom right, rgb(255, 172, 172), rgb(37, 131, 255));
+    margin: 20px auto;
+    @include linear-gradient-facebook-dark;
     border: 1px solid black;
-    border-radius: 20%;
 
     a {
         color: black;
-        background: linear-gradient(to bottom right, rgb(167, 0, 0), rgb(0, 0, 0));
+        background: linear-gradient(to bottom right, $amazon-orange, red, $netflix-black);
         border: 1px solid black;
         margin: 40px;
+        padding: 20px 10px;
         text-align: center;
-        text-decoration: none;
         display: block;
+        color: $facebook-light-grey;
+        @include BS-slight-down;
     }
 }
