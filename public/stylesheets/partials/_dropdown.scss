@@ -1,0 +1,26 @@
+@import 'color';
+@import 'box-shadow';
+
+@mixin dropdown-template() {
+    position: relative;
+   
+    & .dropdown-content {
+       display: none;
+       position: absolute;
+       background-color: $facebook-light-grey;
+       min-width: 160px;
+       @include BS-very-slight-down;
+       padding: 12px 16px;
+       z-index: 1;
+    }
+   
+   &:hover {
+       background: $netflix-red;
+   }
+   
+   &:active {
+       & .dropdown-content {
+           display: table-row;
+       }
+   } 
+}

@@ -28,3 +28,7 @@ $google-red: #EA4335;
 @mixin linear-gradient-facebook-dark {
     background: linear-gradient(to bottom right, $facebook-dark-blue, $facebook-dark-grey);
 }
+
+@mixin linear-gradient-azn-nfx {
+    background: linear-gradient(to bottom right, $amazon-orange, red, $netflix-black);
+}

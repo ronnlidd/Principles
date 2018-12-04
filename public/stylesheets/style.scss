@@ -1,30 +1,45 @@
 @import 'partials/base';
 @import 'partials/header';
-@import 'partials/box-shadows';
-@import 'partials/colors';
+@import 'partials/box-shadow';
+@import 'partials/color';
+@import 'partials/border';
+@import 'partials/dropdown';
 
 
 header {
     @include principlesHeader();
+    & button {
+        float: right;
+        @include linear-gradient-azn-nfx;
+        @include standard-1px-border;
+        @include BS-very-slight-down;
+        margin: 0 25px;
+        padding: 15px;
+        bottom: 20%;
+        @include dropdown-template;
+    }
 }
 
 #ULTRATITLE { 
-    background: linear-gradient(to bottom right, $facebook-dark-blue, $facebook-light-grey);
+    @include linear-gradient-facebook-dark;
+    & h1 {
+        text-align: left;
+        margin-left: 40px;
+    }
 }
 
 nav {
     width: 60%;
     margin: 20px auto;
     @include linear-gradient-facebook-dark;
-    border: 1px solid black;
+    @include standard-1px-border;
 
     a {
-        color: black;
-        background: linear-gradient(to bottom right, $amazon-orange, red, $netflix-black);
+        color: $netflix-black;
+        @include linear-gradient-azn-nfx;
         border: 1px solid black;
         margin: 40px;
         padding: 20px 10px;
-        text-align: center;
         display: block;
         color: $facebook-light-grey;
         @include BS-slight-down;
