@@ -92,24 +92,27 @@ header {
     position: relative;
     top: 35%;
     color: white; }
+    header h1 span, header h2 span {
+      font-size: 50%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
 
-#ULTRAHEADER {
+#standardHeader {
   background: #221F1F; }
-  #ULTRAHEADER h1 {
+  #standardHeader h1 {
     text-align: left;
     margin: -5px 0 0 40px; }
-    #ULTRAHEADER h1 a {
+    #standardHeader h1 a {
       color: #F5F5F1; }
-      #ULTRAHEADER h1 a:hover {
+      #standardHeader h1 a:hover {
         color: #DFE3EE; }
-  #ULTRAHEADER li {
+  #standardHeader li {
     display: block;
     float: left;
     position: relative;
     transition-duration: .5s; }
-    #ULTRAHEADER li:hover, #ULTRAHEADER li :focus-within {
+    #standardHeader li:hover, #standardHeader li :focus-within {
       cursor: pointer; }
-    #ULTRAHEADER li a {
+    #standardHeader li a {
       background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
       margin: 5px 30px;
       padding: 16px 10px;
@@ -117,9 +120,9 @@ header {
       color: #F7F7F7;
       box-shadow: 0 0px 40px -15px rgba(255, 255, 255, 0.75);
       border: 1px solid #221F1F; }
-      #ULTRAHEADER li a:hover {
+      #standardHeader li a:hover {
         background: #221F1F; }
-    #ULTRAHEADER li ul {
+    #standardHeader li ul {
       visibility: hidden;
       opacity: 0;
       min-width: 5rem;
@@ -127,24 +130,24 @@ header {
       transition: all 0.5s ease;
       left: 0;
       display: none; }
-  #ULTRAHEADER ul li:hover > ul,
-  #ULTRAHEADER ul li:focus-within > ul,
-  #ULTRAHEADER ul li ul:hover,
-  #ULTRAHEADER ul li ul:focus {
+  #standardHeader ul li:hover > ul,
+  #standardHeader ul li:focus-within > ul,
+  #standardHeader ul li ul:hover,
+  #standardHeader ul li ul:focus {
     visibility: visible;
     opacity: 1;
     display: block;
     z-index: 2; }
-  #ULTRAHEADER ul li ul li {
+  #standardHeader ul li ul li {
     clear: both;
     width: 100%; }
-    #ULTRAHEADER ul li ul li a {
+    #standardHeader ul li ul li a {
       margin: 1px;
       background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
       border: 1px solid #221F1F; }
-      #ULTRAHEADER ul li ul li a:hover {
+      #standardHeader ul li ul li a:hover {
         background: #b40710; }
-  #ULTRAHEADER #NavNav {
+  #standardHeader #NavNav {
     width: 80%;
     margin: -20px -80px 0 auto;
     background: linear-gradient(to bottom right, #3B5998, #DFE3EE); }

@@ -12,7 +12,7 @@ header {
     @include principlesHeader;
 }
 
-#ULTRAHEADER { 
+#standardHeader { 
     background: $netflix-black;
     & h1 {
         text-align: left;
@@ -23,8 +23,7 @@ header {
              &:hover {
                 color: $facebook-dark-grey;
             } 
-         }
-       
+         }  
     }
     
     @include dropdown-template;
