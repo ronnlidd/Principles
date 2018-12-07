@@ -1,0 +1,12 @@
+@mixin no-line-break {
+	.NLB {
+		white-space: nowrap;
+	}
+}
+
+@mixin UnderlineBold {
+    .UB {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}

@@ -11,3 +11,7 @@
 @mixin BS-very-slight-down {
     box-shadow: 0 3px 3px rgb(0,0,0);    
 }
+
+@mixin BS-very-slight-behind-light  () {
+    box-shadow: 0 0px 40px -15px rgba(255,255,255,0.75);
+}

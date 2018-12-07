@@ -1,11 +1,12 @@
 @import 'box-shadow';
 @import 'base';
+@import 'color';
 
 @mixin principlesHeader(){
     width: 100%;
     min-width: 700px;
     height: 80px;
-    background: linear-gradient(to bottom right, rgb(0, 0, 0), red);
+    background: $linear-gradient-nfx;
     @include BS-very-slight-down;
     & h1, h2 {
         position: relative;
