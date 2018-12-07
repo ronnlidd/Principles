@@ -166,22 +166,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-header {
+#standardHeader {
   width: 100%;
   min-width: 700px;
   height: 80px;
   background: linear-gradient(to bottom right, #221F1F, #E50914);
   box-shadow: 0 3px 3px black; }
-  header h1, header h2 {
+  #standardHeader h1, #standardHeader h2 {
     position: relative;
     top: 35%;
     color: white; }
-    header h1 span, header h2 span {
+    #standardHeader h1 span, #standardHeader h2 span {
       font-size: 50%;
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
-
-#standardHeader {
-  background: #221F1F; }
   #standardHeader h1 {
     text-align: left;
     margin: -5px 0 0 40px; }
@@ -236,6 +233,13 @@ header {
     margin: -20px -80px 0 auto;
     background: linear-gradient(to bottom right, #3B5998, #DFE3EE); }
 
+.CMPT, .CSPT {
+  border: 2px solid #221F1F;
+  border-color: #E50914;
+  width: 50%;
+  margin: 15px auto;
+  padding: 5px; }
+
 .PrinNav {
   width: 60%;
   margin: 20px auto;
@@ -252,6 +256,31 @@ header {
     box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
     .PrinNav a:hover {
       background: #E50914; }
+
+.CSPC {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .CSPC .SPC {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #221F1F;
+    background: linear-gradient(to bottom right, #48525c, #add8e6);
+    color: #F5F5F1; }
+
+.MP a {
+  color: #221F1F;
+  background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
+  border: 1px solid #221F1F;
+  margin: 40px;
+  padding: 20px 10px;
+  display: block;
+  color: #F7F7F7;
+  box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
+  .MP a:hover {
+    background: #E50914; }
+.MP a:hover {
+  background: linear-gradient(to bottom right, #FF9900, red, #221F1F); }
 
 footer {
   height: auto;

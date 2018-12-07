@@ -1,0 +1,67 @@
+@import 'color';
+@import 'box-shadow';
+@import 'border';
+
+@mixin dropdown-template() {      
+
+  li {
+	display: block;
+	float: left;
+	position: relative;
+  transition-duration: .5s;
+
+  &:hover, :focus-within {
+    cursor: pointer;
+  }
+
+  & a {
+    background: $linear-gradient-nfx-grb;
+    margin: 5px 30px;
+    padding: 16px 10px;
+    display: block;
+    color: $facebook-light-grey;
+    @include BS-very-slight-behind-light;
+    @include standard-1px-border;
+
+    &:hover {
+      background: $netflix-black;
+    }
+  }
+
+  & ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    display: none;
+  }
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  z-index: 2;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
+
+  & a {
+    margin: 1px;
+    background: $linear-gradient-azn-nfx;
+    @include standard-1px-border;
+
+    &:hover {
+      background: darken( $netflix-red, 10%);
+    }
+  }
+}
+}
+  

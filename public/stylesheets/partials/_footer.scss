@@ -1,0 +1,75 @@
+@mixin footer-200px {
+    height: auto;
+    width: 100%;
+    background: $netflix-black;
+    position: absolute;
+    left: 0;
+    padding: 10px 0 30px 0;
+
+    & h2, p {
+        color: $netflix-white;
+        text-align: left;
+        padding: 15px 20px 10px 20px;
+        margin: 0 40px;
+    }
+}
+
+@mixin footer-a-reset {
+        background: none;
+        @include standard-1px-border;
+        color: $netflix-white;
+        box-shadow: none;
+        padding: 0;
+        
+        &:hover {
+            background: none;
+        }
+   }
+
+@mixin footer-a-set {
+        color: $netflix-black;
+        background:  $linear-gradient-azn-nfx;
+        @include standard-1px-border;
+        color: $facebook-light-grey;
+        @include BS-slight-down;
+        padding: 4px 7px;
+        margin: 0 5px;
+        
+        &:hover {
+            background: darken( $netflix-red, 10% );
+        }
+} 
+
+@mixin metaFooter {
+    footer {
+    @include footer-200px;
+    @include no-line-break;
+    @include UnderlineBold;
+    line-height: 30px;
+    
+    & a {
+        @include footer-a-set;
+    }
+
+    & #CRUD {
+        background:  $netflix-black;
+        @include standard-1px-border;
+        color: $google-blue;
+        box-shadow: none;
+        padding: 0;
+        &:hover {
+            color: $amazon-blue;
+        }
+    }
+   
+   & #PT {
+        @include footer-a-reset;
+       
+        &:hover {
+        color: $facebook-dark-grey;
+       }
+    }
+   }
+  }
+
+

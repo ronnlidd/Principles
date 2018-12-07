@@ -1,0 +1,38 @@
+@import '../partials/base';
+@import '../partials/border';
+@import '../partials/box-shadow';
+@import '../partials/color';
+@import '../partials/dropdown';
+@import '../partials/footer';
+@import '../partials/text';
+@import '../partials/header';
+
+#standardHeader{ 
+    @include principlesHeader;
+    & h1 {
+        text-align: left;
+        margin: -5px 0 0 40px;
+         a {
+             color: $netflix-white;
+
+             &:hover {
+                color: $facebook-dark-grey;
+            } 
+         }
+       
+    }
+    
+    @include dropdown-template;
+    #NavNav {
+        width: 80%;
+        margin: -20px -80px 0 auto;
+        background: $linear-gradient-facebook-dark;
+      }
+}
+
+#black-hole {
+    height: 1000px;
+    background: black;
+}
+
+@include metaFooter;

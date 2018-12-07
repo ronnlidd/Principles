@@ -1,0 +1,32 @@
+@import 'box-shadow';
+@import 'base';
+@import 'color';
+@import 'border';
+
+@mixin principlesHeader(){
+    width: 100%;
+    min-width: 700px;
+    height: 80px;
+    background: $linear-gradient-nfx;
+    @include BS-very-slight-down;
+    & h1, h2 {
+        position: relative;
+        top: 35%;
+        color: white;
+
+        & span {
+            font-size: 50%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    }
+}
+
+@mixin chooseMetaPrincipleTitle {
+    .CMPT, .CSPT {
+        @include standard-2px-border;
+        border-color: $netflix-red;
+        width: 50%;
+        margin: 15px auto;
+        padding: 5px;
+    }
+}

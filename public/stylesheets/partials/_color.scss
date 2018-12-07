@@ -1,0 +1,33 @@
+$white          : #fff;
+$black          : #000;
+$grey           : #878787;
+$regent-st-blue : #add8e6;
+$river-bed      : #48525c;
+$yellow-orange  : #ffa949;
+$mandy          : #ED616D;
+
+// Company-colors: https://www.w3schools.com/colors/colors_brands.asp
+$netflix-red: #E50914;
+$netflix-black: #221F1F;
+$netflix-white: #F5F5F1;
+
+$amazon-orange: #FF9900;
+$amazon-blue: #146EB4;
+
+
+$facebook-dark-blue: #3B5998;
+$facebook-light-blue: #8B9DC3;
+$facebook-dark-grey: #DFE3EE;
+$facebook-light-grey: #F7F7F7;
+
+$google-blue: #4285F4;
+$google-yellow: #FBBC05;
+$google-green: #34A853;
+$google-red: #EA4335;
+
+$linear-gradient-azn-nfx: linear-gradient(to bottom right, $amazon-orange, red, $netflix-black);
+$linear-gradient-facebook-dark: linear-gradient(to bottom right, $facebook-dark-blue, $facebook-dark-grey);
+$linear-gradient-nfx: linear-gradient(to bottom right, $netflix-black, $netflix-red);
+$linear-gradient-nfx-grb: linear-gradient(10deg, gold, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-red, $netflix-red);
+$linear-gradient-rb-m-rsb: linear-gradient(to bottom right, $river-bed, $mandy, $regent-st-blue);
+$linear-gradient-rb-rsb: linear-gradient(to bottom right, $river-bed, $regent-st-blue);

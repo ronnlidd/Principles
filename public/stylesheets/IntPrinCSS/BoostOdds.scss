@@ -1,0 +1,47 @@
+@import '../partials/base';
+@import '../partials/header';
+@import '../partials/box-shadow';
+@import '../partials/color';
+@import '../partials/border';
+@import '../partials/dropdown';
+@import '../partials/footer';
+@import '../partials/text';
+@import '../partials/box';
+
+
+#standardHeader{ 
+    @include principlesHeader;
+    & h1 {
+        text-align: left;
+        margin: -5px 0 0 40px;
+         a {
+             color: $netflix-white;
+
+             &:hover {
+                color: $facebook-dark-grey;
+            } 
+         }
+       
+    }
+    
+    @include dropdown-template;
+    #NavNav {
+        width: 80%;
+        margin: -20px -80px 0 auto;
+        background: $linear-gradient-facebook-dark;
+      }
+}
+
+@include choosePrincipleTitle;
+@include metaPrincipleNav;
+
+@include subPrincipleNav;
+
+.MP {
+    @include metaPrincipleLink;
+    & a:hover {
+        background: $linear-gradient-azn-nfx;
+    }
+}
+
+@include metaFooter;

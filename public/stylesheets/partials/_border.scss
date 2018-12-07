@@ -1,0 +1,11 @@
+@mixin standard-1px-border {
+    border: 1px solid $netflix-black;
+}
+
+@mixin standard-2px-border {
+    border: 2px solid $netflix-black;
+}
+
+@mixin standard-3px-border {
+    border: 3px solid $netflix-black;
+}
