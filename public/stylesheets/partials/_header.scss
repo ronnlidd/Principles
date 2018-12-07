@@ -1,6 +1,7 @@
 @import 'box-shadow';
 @import 'base';
 @import 'color';
+@import 'border';
 
 @mixin principlesHeader(){
     width: 100%;
@@ -17,5 +18,15 @@
             font-size: 50%;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
+    }
+}
+
+@mixin chooseMetaPrincipleTitle {
+    .CMPT, .CSPT {
+        @include standard-2px-border;
+        border-color: $netflix-red;
+        width: 50%;
+        margin: 15px auto;
+        padding: 5px;
     }
 }

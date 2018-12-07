@@ -6,6 +6,7 @@
 @import 'partials/dropdown';
 @import 'partials/footer';
 @import 'partials/text';
+@import 'partials/box';
 
 // Introduce accessibility and responsiveness
 header {
@@ -33,27 +34,5 @@ header {
         background: $linear-gradient-facebook-dark;
       }
 }
-
-.PrinNav {
-    width: 60%;
-    margin: 20px auto;
-    background: $linear-gradient-facebook-dark;
-    @include standard-1px-border;
-
-    a {
-        color: $netflix-black;
-        background:  $linear-gradient-azn-nfx;
-        border: 1px solid black;
-        margin: 40px;
-        padding: 20px 10px;
-        display: block;
-        color: $facebook-light-grey;
-        @include BS-slight-down;
-
-        &:hover {
-            background: $netflix-red;
-        }
-    }
-}
-
-@include Meta-footer; 
+@include metaPrincipleNav;
+@include metaFooter; 

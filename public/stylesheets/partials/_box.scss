@@ -1,0 +1,62 @@
+@import 'base';
+@import 'header';
+@import 'box-shadow';
+@import 'color';
+@import 'border';
+@import 'dropdown';
+@import 'footer';
+@import 'text';
+
+@mixin choosePrincipleTitle {
+    .CMPT, .CSPT {
+        @include standard-2px-border;
+        border-color: $netflix-red;
+        width: 50%;
+        margin: 15px auto;
+        padding: 5px;
+    }
+}
+
+@mixin metaPrincipleLink {
+        a {
+            color: $netflix-black;
+            background: $linear-gradient-azn-nfx;
+            @include standard-1px-border;
+            margin: 40px;
+            padding: 20px 10px;
+            display: block;
+            color: $facebook-light-grey;
+            @include BS-slight-down;
+
+            &:hover {
+                background: $netflix-red;
+            }
+    }   
+}
+
+@mixin metaPrincipleNav {
+    .PrinNav {
+        width: 60%;
+        margin: 20px auto;
+        background: $linear-gradient-facebook-dark;
+        @include standard-1px-border;
+        @include metaPrincipleLink;
+        }
+    }
+    
+
+    @mixin subPrincipleNav {
+        .CSPC {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            & .SPC {
+                margin: 10px;
+                padding: 10px;
+                @include standard-1px-border;
+                background: $linear-gradient-rb-rsb;
+                color: $netflix-white;
+            }
+        }
+    }
