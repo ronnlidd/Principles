@@ -9,7 +9,7 @@
 @import '../partials/box';
 
 
-#standardHeader{ 
+#standardHeader { 
     @include principlesHeader;
     & h1 {
         text-align: left;
@@ -32,10 +32,22 @@
       }
 }
 
+@include toggleAllSSSPButton;
+
+#toggleSuccess {
+    width: 30%;
+    background: $netflix-black;
+    color: $netflix-white;
+    margin: 0 auto;
+    height: 200px;
+}
+
 @include choosePrincipleTitle;
 @include metaPrincipleNav;
 
 @include subPrincipleNav;
+@include allSubPrinciples;
+@include subPrincipleContainer;
 
 .MP {
     @include metaPrincipleLink;

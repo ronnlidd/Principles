@@ -233,6 +233,30 @@ table {
     margin: -20px -80px 0 auto;
     background: linear-gradient(to bottom right, #3B5998, #DFE3EE); }
 
+#toggleAllSSSP {
+  width: 15%;
+  margin: 10% 0 0 2%;
+  float: left;
+  background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
+  padding: 16px 10px;
+  display: block;
+  color: #F7F7F7;
+  box-shadow: 0 0px 40px -5px rgba(0, 0, 0, 0.75);
+  border: 1px solid #221F1F; }
+  #toggleAllSSSP:hover {
+    background: #221F1F;
+    cursor: pointer; }
+  #toggleAllSSSP:active {
+    background: black;
+    color: #F5F5F1; }
+
+#toggleSuccess {
+  width: 30%;
+  background: #221F1F;
+  color: #F5F5F1;
+  margin: 0 auto;
+  height: 200px; }
+
 .CMPT, .CSPT {
   border: 2px solid #221F1F;
   border-color: #E50914;
@@ -244,7 +268,8 @@ table {
   width: 60%;
   margin: 20px auto;
   background: linear-gradient(to bottom right, #3B5998, #DFE3EE);
-  border: 1px solid #221F1F; }
+  border: 1px solid #221F1F;
+  box-shadow: 0 3px 3px black; }
   .PrinNav a {
     color: #221F1F;
     background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
@@ -260,13 +285,76 @@ table {
 .CSPC {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%; }
   .CSPC .SPC {
     margin: 10px;
     padding: 10px;
     border: 1px solid #221F1F;
-    background: linear-gradient(to bottom right, #48525c, #add8e6);
-    color: #F5F5F1; }
+    background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
+    color: #F5F5F1;
+    box-shadow: 0 3px 3px black; }
+
+.SP {
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
+  color: #F5F5F1;
+  box-shadow: 0 3px 3px black; }
+
+.SSP, .toggleSSSP {
+  width: 70%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #FF9900, #146EB4);
+  color: #221F1F;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black; }
+
+.SSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #0a3658;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black; }
+
+.SP {
+  margin: 15px auto;
+  padding: 10px;
+  width: 80%;
+  height: auto;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
+  color: #F5F5F1;
+  box-shadow: 0 3px 3px black; }
+
+.SSP, .toggleSSSP {
+  width: 70%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #FF9900, #146EB4);
+  color: #221F1F;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black; }
+
+.SSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #0a3658;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black; }
+
+.SPCR {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; }
 
 .MP a {
   color: #221F1F;

@@ -1,11 +1,12 @@
 @import '../partials/base';
-@import '../partials/border';
+@import '../partials/header';
 @import '../partials/box-shadow';
 @import '../partials/color';
+@import '../partials/border';
 @import '../partials/dropdown';
 @import '../partials/footer';
 @import '../partials/text';
-@import '../partials/header';
+@import '../partials/box';
 
 #standardHeader{ 
     @include principlesHeader;
@@ -30,9 +31,18 @@
       }
 }
 
-#black-hole {
-    height: 1000px;
-    background: black;
+
+@include choosePrincipleTitle;
+@include metaPrincipleNav;
+
+@include subPrincipleNav;
+@include subPrincipleBox;
+
+.MP {
+    @include metaPrincipleLink;
+    & a:hover {
+        background: $linear-gradient-azn-nfx;
+    }
 }
 
 @include metaFooter;

@@ -41,6 +41,7 @@
         background: $linear-gradient-facebook-dark;
         @include standard-1px-border;
         @include metaPrincipleLink;
+        @include BS-very-slight-down;
         }
     }
     
@@ -50,12 +51,91 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            width: 100%;
 
             & .SPC {
                 margin: 10px;
                 padding: 10px;
                 @include standard-1px-border;
-                background: $linear-gradient-rb-rsb;
+                background: $linear-gradient-nagn;
+                color: $netflix-white;
+                @include BS-very-slight-down;
+            }
+        }
+    }
+
+    @mixin subPrincipleBox {
+        .SP {
+            margin: 15px auto;
+            padding: 10px;
+            width: 80%;
+            height: auto;
+            @include standard-1px-border;
+            background: $linear-gradient-nagn;
+            color: $netflix-white;
+            @include BS-very-slight-down
+        }
+    }
+
+    @mixin subSubPrincipleBox {
+        .SSP, .toggleSSSP {
+                width: 70%;
+                @include standard-1px-border;
+                background: $linear-gradient-amazon;
+                color: $netflix-black;
+                padding: 10px;
+                margin: 15px auto;
+                @include BS-very-slight-down
+            }
+    }
+
+    @mixin subSubSubPrincipleBox {
+        .SSSP {
+                width: 35%;
+                @include standard-1px-border;
+                background: $linear-gradient-google-rb;
+                color: darken( $amazon-blue, 20% );
+                padding: 10px;
+                margin: 15px auto;
+                @include BS-very-slight-down
+            }
+    }
+
+    @mixin allSubPrinciples {
+        @include subPrincipleBox;
+        @include subSubPrincipleBox;
+        @include subSubSubPrincipleBox;
+    }
+
+    @mixin subPrincipleContainer {
+        @include allSubPrinciples;
+        
+        .SPCR {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;  
+        }
+    }
+
+    @mixin toggleAllSSSPButton {
+        #toggleAllSSSP {
+            width: 15%;
+            margin: 10% 0 0 2%;
+            float: left;
+            background: $linear-gradient-nfx-grb;
+            padding: 16px 10px;
+            display: block;
+            color: $facebook-light-grey;
+            @include BS-slight-behind;
+            @include standard-1px-border;
+
+            &:hover {
+                background: $netflix-black;
+                cursor: pointer;
+            }
+
+            &:active {
+                background: black;
                 color: $netflix-white;
             }
         }

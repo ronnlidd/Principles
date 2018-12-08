@@ -240,7 +240,8 @@ header {
   width: 60%;
   margin: 20px auto;
   background: linear-gradient(to bottom right, #3B5998, #DFE3EE);
-  border: 1px solid #221F1F; }
+  border: 1px solid #221F1F;
+  box-shadow: 0 3px 3px black; }
   .PrinNav a {
     color: #221F1F;
     background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
