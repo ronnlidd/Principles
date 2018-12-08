@@ -32,14 +32,14 @@
 }
 
 
-@include choosePrincipleTitle;
-@include metaPrincipleNav;
+@include CPTitle;
+@include MPNav;
 
-@include subPrincipleNav;
-@include subPrincipleBox;
+@include SPNav;
+@include SPBox;
 
 .MP {
-    @include metaPrincipleLink;
+    @include MPLink;
     & a:hover {
         background: $linear-gradient-azn-nfx;
     }

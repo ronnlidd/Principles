@@ -7,17 +7,17 @@
 @import 'footer';
 @import 'text';
 
-@mixin choosePrincipleTitle {
+@mixin CPTitle {
     .CMPT, .CSPT {
         @include standard-2px-border;
         border-color: $netflix-red;
         width: 50%;
-        margin: 15px auto;
+        margin: 18px auto;
         padding: 5px;
     }
 }
 
-@mixin metaPrincipleLink {
+@mixin MPLink {
         a {
             color: $netflix-black;
             background: $linear-gradient-azn-nfx;
@@ -31,99 +31,147 @@
             &:hover {
                 background: $netflix-red;
             }
+
+            &:active {
+                background: darken( $netflix-red, 20% );
+            }
     }   
 }
 
-@mixin metaPrincipleNav {
+@mixin MPNav {
     .PrinNav {
         width: 60%;
         margin: 20px auto;
         background: $linear-gradient-facebook-dark;
         @include standard-1px-border;
-        @include metaPrincipleLink;
+        @include MPLink;
         @include BS-very-slight-down;
         }
     }
     
+    @mixin SPTemplate {
+        @include standard-1px-border;
+        background: $linear-gradient-nagn;
+        color: $netflix-white;
+        @include BS-very-slight-down;
+    }
 
-    @mixin subPrincipleNav {
+    @mixin SPNav {
         .CSPC {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            width: 100%;
+            width: 95%;
+            margin: 0 auto;
 
             & .SPC {
                 margin: 10px;
+                width: 100%;
                 padding: 10px;
-                @include standard-1px-border;
-                background: $linear-gradient-nagn;
-                color: $netflix-white;
-                @include BS-very-slight-down;
+                @include SPTemplate;
+
+                & p {
+                    position: relative;
+                    top: 2.5%;
+                }
+
+                &:hover {
+                    background: $amazon-orange;
+                }
+
+                &:active {
+                    background: darken( $amazon-orange, 20%);
+                }
             }
         }
     }
 
-    @mixin subPrincipleBox {
+    @mixin SPBox {
         .SP {
             margin: 15px auto;
             padding: 10px;
             width: 80%;
-            height: auto;
-            @include standard-1px-border;
-            background: $linear-gradient-nagn;
-            color: $netflix-white;
-            @include BS-very-slight-down
+            @include SPTemplate;
         }
     }
 
-    @mixin subSubPrincipleBox {
-        .SSP, .toggleSSSP {
-                width: 70%;
-                @include standard-1px-border;
-                background: $linear-gradient-amazon;
-                color: $netflix-black;
-                padding: 10px;
-                margin: 15px auto;
-                @include BS-very-slight-down
+    @mixin SSPBox {
+     .SSP {
+             width: 70%;
+             @include standard-1px-border;
+             background: $linear-gradient-amazon;
+             color: $netflix-black;
+             padding: 10px;
+             margin: 15px auto;
+             @include BS-very-slight-down;
+             display: none;
+         }
+        }
+
+    @mixin SSSPBox {
+        .SSSP {
+            width: 35%;
+            @include standard-1px-border;
+            background: $linear-gradient-google-rb;
+            color: $netflix-white;
+            padding: 10px;
+            margin: 15px auto;
+            @include BS-very-slight-down;
+            display: none;
             }
     }
 
-    @mixin subSubSubPrincipleBox {
-        .SSSP {
+    @mixin SSSSPBox {
+        .SSSSP {
                 width: 35%;
                 @include standard-1px-border;
                 background: $linear-gradient-google-rb;
-                color: darken( $amazon-blue, 20% );
+                color: $netflix-white;
                 padding: 10px;
                 margin: 15px auto;
-                @include BS-very-slight-down
+                @include BS-very-slight-down;
+                display: none;
             }
     }
 
-    @mixin allSubPrinciples {
-        @include subPrincipleBox;
-        @include subSubPrincipleBox;
-        @include subSubSubPrincipleBox;
+    @mixin SSSSSPBox {
+        .SSSSSP {
+                width: 35%;
+                @include standard-1px-border;
+                background: $linear-gradient-google-rb;
+                color: $netflix-white;
+                padding: 10px;
+                margin: 15px auto;
+                @include BS-very-slight-down;
+                display: none;
+            }
     }
 
-    @mixin subPrincipleContainer {
-        @include allSubPrinciples;
+    @mixin allSPBoxes {
+        @include SPBox;
+        @include SSPBox;
+        @include SSSPBox;
+        @include SSSSPBox;
+        @include SSSSSPBox;
+    }
+
+    @mixin SPCR {
+        @include allSPBoxes;
         
         .SPCR {
-            width: 80%;
+            width: 100%;
             height: auto;
             margin: 0 auto;  
         }
     }
 
-    @mixin toggleAllSSSPButton {
-        #toggleAllSSSP {
-            width: 15%;
-            margin: 10% 0 0 2%;
+    @mixin toggleAllSSPButton {
+        .toggleAllSSP, .toggleAllSSP p {
+            width: 13%;
+            margin: .42% 0 0 2%;
             float: left;
             background: $linear-gradient-nfx-grb;
-            padding: 16px 10px;
+            padding: 14px 10px;
             display: block;
             color: $facebook-light-grey;
             @include BS-slight-behind;
@@ -139,4 +187,61 @@
                 color: $netflix-white;
             }
         }
+
+        #toggleSuccess {
+            display: none;
+            width: 13%;
+            background: $linear-gradient-nfx-grb;
+            padding: 20px 10px;
+            margin: .42% auto 0 auto;
+            color: $facebook-light-grey;
+            @include BS-slight-behind;
+            @include standard-1px-border;
+        }
     }
+
+    @mixin goToHome {
+        #goToHome {
+            width: 13%;
+            float: right;
+            background: $linear-gradient-nfx-grb;
+            padding: 25px 10px;
+            color: $facebook-light-grey;
+            @include BS-slight-behind;
+            @include standard-1px-border;
+            margin: .42% 2% 0 0;
+        
+
+        &:hover {
+            background: $netflix-black;
+            cursor: pointer;
+        }
+
+        &:active {
+            background: black;
+            color: $netflix-white;
+        }
+    }
+}
+
+@mixin comment {
+    .comment span {
+        display: block;
+        margin: 5px auto 0 auto;
+        width: 40%;
+        background: $netflix-white;
+        color: $netflix-black;
+        padding: 5px;
+        font-size: .7rem;
+        @include standard-1px-border;
+
+        &:before {
+            content: "COMMENT: ";
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: $netflix-black;
+            font-size: 1rem;
+            background: $netflix-white;
+            margin-top: 15px;
+        }
+    }
+}

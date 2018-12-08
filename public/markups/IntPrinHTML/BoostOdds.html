@@ -1,3 +1,8 @@
+<!-- Add comments -->
+<!-- Fix toggles for acronym buttons -->
+<!-- Refactor all code -->
+<!-- Compare with principle-doc -->
+
 <!DOCTYPE HTML5><html> 
 <html lang="en">
 <head>
@@ -7,7 +12,6 @@
 <meta name="author" content="Ronnlidd">
 <link rel="stylesheet" type="text/css" href="../../stylesheets/IntPrinCSS/BoostOdds.css">
 <script src="/jquery/jquery.min.js"></script>
-<!-- <script type="text/javascript" src="../../javascripts/IntPrinJS/BoostOdds.js"></script> -->
 <script type="text/javascript" src="../../javascripts/toggleP.js"></script>
 </head>
 
@@ -59,10 +63,13 @@
 
 <h2 class="CMPT">Choose Meta-Principle</h2> <!-- Choose Meta Principle Title -->
 
-<button id="toggleAllSSSP">Show 4 levels of principles Principles (Default=3)</button>
-<div id="toggleSuccess" title="Toggle success">
-    <p>You're now displaying 4 levels of Principles!</p>
-</div>
+<a href="../../index.html"><button id="goToHome">Go To Home Page</button></a>
+
+<button class="toggleAllSSP">Show all levels of Principles (Default = 2 levels)</button>
+<!-- Remember to always use class="SSP" together with RWE: SSSP SSP even if it's a SSSP SSP or SSSP SSP etc. -->
+<p class="SSP" id="toggleSuccess">All levels of Principles are now showing.</p>
+<!-- OBSERVE: SSP means: 1: Sub Sub Principle Class. 2: Toggle show/hide from Meta-button with class toggleAllSSP. -->
+
 
 <nav class="PrinNav">
         <a id="BoostOddsNav" href="#p11">Boost your odds of success through de-centralized principle-guided decision-making.</a>
@@ -80,77 +87,74 @@
     
     <div class="CSPC"> <!-- Choose Sub Principle Container-->
         <a class="SPC" href="#p111"> <!-- Sub Principle Choice -->
-            Find out what reality looks like through <i>The Scientific Method</i><!-- Link to other doc--> & phenomenology of consciousness.
+            <p>Find out what reality looks like through <i>The Scientific Method</i><!-- Link to other doc--> & phenomenology of consciousness.</p>
         </a>
         <a class="SPC" href="#p112"> <!-- Sub Principle Choice -->
-            <i>Find your meaning/Why What do you want reality to be like?</i><!-- Link to other doc-->
+            <p><i>Find your meaning/Why What do you want reality to be like?</i><!-- Link to other doc--></p>
         </a>
         <a class="SPC" href="#p113"> <!-- Sub Principle Choice -->
-            Write down principles for making decisions in future realities.
+            <p>Write down principles for making decisions in future realities.</p>
         </a>
         <a class="SPC" href="#p114"> <!-- Sub Principle Choice -->
-            Turn principles into algorithms.</a>
+            <p>Turn principles into algorithms.</p>
+        </a>
         <a class="SPC" href="#p115"> <!-- Sub Principle Choice -->
-            Incrementally RUD principles for 4 AoL.
+            <p>Incrementally RUD principles for 4 AoL.</p>
         </a>
         <a class="SPC" href="#p116"> <!-- Sub Principle Choice -->
-            Practice. <i>Doing what's subj. right, using skill through principle-guided decision-making in complex systems.</i>
+            <p>Practice. Doing what's subj. right, using skill through principle-guided decision-making in complex systems.</i></p>
         </a>
     </div>
  
-    <h3 class="SP" id="p111"> <!-- Sub Principle -->
-        Find out what reality looks like through <a>The Scientific Method</a> & phenomenology of consciousness.
-    </h3>
-    <h3 class="SP" id="p112"> <!-- Sub Principle -->
-        <a>Find your meaning/Why</a> <i>What do you want reality to be like?</i>
-    </h3>
+    <h3 class="SP" id="p111"> <!-- Sub Principle -->Find out what reality looks like through <a>The Scientific Method</a> & phenomenology of consciousness.</h3>
+    <h3 class="SP" id="p112"> <!-- Sub Principle --><a>Find your meaning/Why</a> <i>What do you want reality to be like?</i></h3>
    
  <div class="SPCR"> <!-- Sub Principle Container -->
     <h3 class="SP" id="p113"> <!-- Sub Principle -->Write down principles for making decisions in future realities.</h3>
     <h4 class="SSP" id="p1131">Meta-principles make sub-principles obsolete.</h4> 
-    <h5 class="SSSP" id="p11311">Principles serve you, you don't serve them. //Plan unrigidly & keep an open mind.</h5> <!-- Sub Sub Sub Principle -->
-    <h5 class="SSSP" id="p11312">Delay decisions AMA(subj.)P.</h5>
-    <h5 class="SSSP" id="p11313">Use situational awareness in combination with more general principles as basis for decisions. //Instead of seeking order and getting pseudoorder when planning.</h5>
-    <h5 class="SSSP" id="p11314">If subjective brain thinks, at a deliberate level in a state of happy intelligent consiousness, that a decision should be made, that decision can be made even though it violates some meta-principle.</h5>
+    <h5 class="SSSP SSP" id="p11311">Principles serve you, you don't serve them. //Plan unrigidly & keep an open mind.</h5> <!-- Sub Sub Sub Principle -->
+    <h5 class="SSSP SSP" id="p11312">Delay decisions AMA(subj.)P.</h5>
+    <h5 class="SSSP SSP" id="p11313">Use situational awareness in combination with more general principles as basis for decisions. //Instead of seeking order and getting pseudoorder when planning.</h5>
+    <h5 class="SSSP SSP" id="p11314">If subjective brain thinks, at a deliberate level in a state of happy intelligent consiousness, that a decision should be made, that decision can be made even though it violates some meta-principle.</h5>
     <h4 class="SSP" id="p1132">If principle is subj. practically re-usable, Then write it down. Else embrace the subj. experience of fully being.</h4>
     <h4 class="SSP" id="p1133">Summarize books & experiences by principles and then transfer them to their place in the principle-hierarchy.</h4>
     <h4 class="SSP" id="p1134">If subj. practical, Then write down what will falsify and make obsolete, the principle that you’re using/pondering. //Else keep it in top of mind.</h4>
-    <h4 class="SSP" id="p1135"><button class="SSSPB" onclick="toggleNextP(this)">Use markers, colors and distinguishers. //To communicate with your future self.</button></h4>
-    <h5 class="SSSP" id="p11351"><span class="BOLD">Bold, </span><span class="UNDERLINED">underlined</span> or <span class="MARKED">marked</span> means part of principle is important.</h5>
-    <h5 class="SSSP" id="p11352"><span class="CURSIVE">Cursive</span> means referencing something which has a mental representation.</h5>
-    <h5 class="SSSP" id="p11353"><span id="REDTEXT">Red text</span> means it is not ordered enough for level of principle in which it currently is located, //Work has to be done w/principle.</h5>
+    <h4 class="SSP" id="p1135">Use markers, colors and distinguishers. //To communicate with your future self.</h4>
+    <h5 class="SSSP SSP" id="p11351"><span class="BOLD">Bold, </span><span class="UNDERLINED">underlined</span> or <span class="MARKED">marked</span> means part of principle is important.</h5>
+    <h5 class="SSSP SSP" id="p11352"><span class="CURSIVE">Cursive</span> means referencing something which has a mental representation.</h5>
+    <h5 class="SSSP SSP" id="p11353"><span id="REDTEXT">Red text</span> means it is not ordered enough for level of principle in which it currently is located, //Work has to be done w/principle.</h5>
 </div>
  
  <h4 class="SSP" id="p1136">Use acronyms to increase efficiency of principle-CRUD.<h4>
 <!-- Sub Sub Sub Principle Buttons -->
-       <button class="SSSPB" onclick="toggleNextP(this)">RWE</button><p class="SSSP">Real World Example</p>       
-       <button class="SSSPB" onclick="toggleNextP(this)">LGE</button><p class="SSSP">Learn, Grow, Evolve</p> 
-       <button class="SSSPB" onclick="toggleNextP(this)">LGETH</button><p class="SSSP">Learn, Grow, Evolve Through Happiness</p> 
-       <button class="SSSPB" onclick="toggleNextP(this)">BLARS</button><p class="SSSP">Boost Love And Reduce Suffering //Also BL&RS</p> 
-       <button class="SSSPB" onclick="toggleNextP(this)">CRUD</button><p class="SSSP">Create, Read, Update, Delete</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">CNS</button><p class="SSSP">Central Nervous System</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">MPS</button><p class="SSSP">Muscle Protein Synthesis</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">I.e.</button><p class="SSSP">In essence</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">ALAP</button><p class="SSSP">As Long As Possible</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">AMAP</button><p class="SSSP">As Much As Possible</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">CoC</button><p class="SSSP">Contents of Consciousness</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">RR(P)(F)-R</button><p class="SSSP">Risk Reward (Probability)(Fragility) - Ratio</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">AoL</button><p class="SSSP">Area of Life (My arbitrarily created 4 AoL are: Intellectual, Physical, Relationships & Intellectual)</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">MBS</button><p class="SSSP">Mind Body & Spirit</p> 
-       <button class="SSSPB" onclick="toggleNextP(this)">QoC</button><p class="SSSP">Quality of Consciousness</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">PFC</button><p class="SSSP">Pre-Frontal Cortex</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">SRV</button><p class="SSSP">Survival & Reproduction Value. //(Often used to describe factors with directional effect on this.)</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">P/T-R</button><p class="SSSP">Practice/Theory-Ratio</p>
-       <button class="SSSPB" onclick="toggleNextP(this)">DRY</button><p class="SSSP">Don't Repeat Yourself</p> 
-       <button id="toggleAllSSSP"><h2>Toggle All</h2></button><p class="SSSP">This button toggles all to Show/Hide</p>
+       <button class="SSSP SSP">RWE</button><p class="SSSP SSP">Real World Example</p>       
+       <button class="SSSP SSP">LGE</button><p class="SSSP SSP">Learn, Grow, Evolve</p> 
+       <button class="SSSP SSP">LGETH</button><p class="SSSP SSP">Learn, Grow, Evolve Through Happiness</p> 
+       <button class="SSSP SSP">BLARS</button><p class="SSSP SSP">Boost Love And Reduce Suffering //Also BL&RS</p> 
+       <button class="SSSP SSP">CRUD</button><p class="SSSP SSP">Create, Read, Update, Delete</p>
+       <button class="SSSP SSP">CNS</button><p class="SSSP SSP">Central Nervous System</p>
+       <button class="SSSP SSP">MPS</button><p class="SSSP SSP">Muscle Protein Synthesis</p>
+       <button class="SSSP SSP">I.e.</button><p class="SSSP SSP">In essence</p>
+       <button class="SSSP SSP">ALAP</button><p class="SSSP SSP">As Long As Possible</p>
+       <button class="SSSP SSP">AMAP</button><p class="SSSP SSP">As Much As Possible</p>
+       <button class="SSSP SSP">CoC</button><p class="SSSP SSP">Contents of Consciousness</p>
+       <button class="SSSP SSP">RR(P)(F)-R</button><p class="SSSP SSP">Risk Reward (Probability)(Fragility) - Ratio</p>
+       <button class="SSSP SSP">AoL</button><p class="SSSP SSP">Area of Life (My arbitrarily created 4 AoL are: Intellectual, Physical, Relationships & Intellectual)</p>
+       <button class="SSSP SSP">MBS</button><p class="SSSP SSP">Mind Body & Spirit</p> 
+       <button class="SSSP SSP">QoC</button><p class="SSSP SSP">Quality of Consciousness</p>
+       <button class="SSSP SSP">PFC</button><p class="SSSP SSP">Pre-Frontal Cortex</p>
+       <button class="SSSP SSP">SRV</button><p class="SSSP SSP">Survival & Reproduction Value. //(Often used to describe factors with directional effect on this.)</p>
+       <button class="SSSP SSP">P/T-R</button><p class="SSSP SSP">Practice/Theory-Ratio</p>
+       <button class="SSSP SSP">DRY</button><p class="SSSP SSP">Don't Repeat Yourself</p> 
+       <!-- <button class="toggleAllSSP"><h2>Toggle All</h2></button><p class="SSSP SSP">This button toggles all to Show/Hide</p> -->
 
 <h4 class="SSP" id="p1137">Minimize repeating principles, maximize referencing of principle-documents. <span class="CURSIVE">//Many principles are overlapping into other arbitrary areas of life. Made-up for the purpose of my understanding. There's no problem in making one area of life have incomplete principles, as long as you reference the meta-principle in another AoL in which relevant principles have their domain.</span></h4>
 <!-- Insert links to highly overlapping principle documents -->
 <!-- <div class="SPCR"> -->
         <h4 class="SSP" id="p1138">Write down principles by right level of order.</h4>
-        <h3 class="SSSP" id="p11381">Chaos accepted in AoL back-end doc</h3>
-        <h3 class="SSSP" id="p11382">Order to 90% <span class="CURSIVE">(pseudocode)</span> in principle-docs</h3>
-        <h3 class="SSSP" id="p11383">Order to 100% <span class="CURSIVE">(code)</span> in UI & Algos</h3>
+        <h3 class="SSSP SSP" id="p11381">Chaos accepted in AoL back-end doc</h3>
+        <h3 class="SSSP SSP" id="p11382">Order to 90% <span class="CURSIVE">(pseudocode)</span> in principle-docs</h3>
+        <h3 class="SSSP SSP" id="p11383">Order to 100% <span class="CURSIVE">(code)</span> in UI & Algos</h3>
 <!-- </div> -->
 
     <h3 class="SP" id="p114">Turn principles into algorithms.</h3>
@@ -158,15 +162,15 @@
     
     <h3 class="SP" id="p115">Incrementally RUD principles for 4 AoL.</h3>
     
-    <h3 class="SP" id="p116">Practice. <i>Doing what's subj. right, using skill through principle-guided decision-making in complex systems.</i></h3>
+    <h3 class="SP comment" id="p116">Practice. <span>Doing what's subj. right, using skill through principle-guided decision-making in complex systems.</span></h3>
     <a href="../IntPrinHTML/ApplyPrin.html"><h4 class="SSP" id="p1161">( Apply principles in complex sub-systems of reality. )</h4></a>
 
     <footer>
         <h2>What are <a id="PT" href="#standardHeader"><!-- Principle Title -->Principles?</a></h2> 
         <p>Principles are decision-making guiders. Every principle has the purpose of 
-            <a class="NLB" href="markups/IntPrinHTML/BoostOdds.html"> <!-- No line break-->( <span class="UB"><!-- Underlined Bold -->Boost your odds of success</span> <sub>through de-centralized principle-guided decision-making. )</sub></a>
-             to <a href="markups/SpiPrinHTML/BLARS.html" class="NLB">( Boost love & reduce suffering. )</a>, which is currently the purpose of my <span>life</span>. 
-             <a href="markups/SpiPrinHTML/Meaning.html" class="NLB">( Find your meaning/Why )</a>.
+            <a class="NLB" href="../IntPrinHTML/BoostOdds.html"> <!-- No line break-->( <span class="UB"><!-- Underlined Bold -->Boost your odds of success</span> <sub>through de-centralized principle-guided decision-making. )</sub></a>
+             to <a href="../SpiPrinHTML/BLARS.html" class="NLB">( Boost love & reduce suffering. )</a>, which is currently the purpose of my <span>life</span>. 
+             <a href="../SpiPrinHTML/Meaning.html" class="NLB">( Find your meaning/Why )</a>.
               With other words, I'm trying to achieve a better world for everyone by gathering lessons for which decisions will get me that result.
                The purpose of this process is cost-efficient reproducibility of best decision. 
                Not making the same mistake twice is crucial for getting results. 
@@ -175,7 +179,7 @@
             <a id="CRUD" target="_blank" href="https://study.com/academy/lesson/crud-create-read-update-delete-in-computer-programming.html">
                 CRUDDING
             </a> principles is a way to outsource evolution of any area of life to exposure to that area of life, by practically acting in these
-            <a href="markups/IntPrinHTML/ApplyPrin.html" class="NLB">( Apply principles in <span class="UB">complex sub-systems of reality.</span> )</a></p>
+            <a href="../IntPrinHTML/ApplyPrin.html" class="NLB">( Apply principles in <span class="UB">complex sub-systems of reality.</span> )</a></p>
     </footer>
     
 

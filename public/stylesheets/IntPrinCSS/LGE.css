@@ -237,7 +237,7 @@ table {
   border: 2px solid #221F1F;
   border-color: #E50914;
   width: 50%;
-  margin: 15px auto;
+  margin: 18px auto;
   padding: 5px; }
 
 .PrinNav {
@@ -257,25 +257,35 @@ table {
     box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
     .PrinNav a:hover {
       background: #E50914; }
+    .PrinNav a:active {
+      background: #83050b; }
 
 .CSPC {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%; }
+  width: 95%;
+  margin: 0 auto; }
   .CSPC .SPC {
     margin: 10px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #221F1F;
     background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
     color: #F5F5F1;
     box-shadow: 0 3px 3px black; }
+    .CSPC .SPC p {
+      position: relative;
+      top: 2.5%; }
+    .CSPC .SPC:hover {
+      background: #FF9900; }
+    .CSPC .SPC:active {
+      background: #995c00; }
 
 .SP {
   margin: 15px auto;
   padding: 10px;
   width: 80%;
-  height: auto;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
   color: #F5F5F1;
@@ -292,6 +302,8 @@ table {
   box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
   .MP a:hover {
     background: #E50914; }
+  .MP a:active {
+    background: #83050b; }
 .MP a:hover {
   background: linear-gradient(to bottom right, #FF9900, red, #221F1F); }
 

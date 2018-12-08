@@ -8,6 +8,7 @@
 @import '../partials/text';
 @import '../partials/box';
 
+@include comment;
 
 #standardHeader { 
     @include principlesHeader;
@@ -21,7 +22,6 @@
                 color: $facebook-dark-grey;
             } 
          }
-       
     }
     
     @include dropdown-template;
@@ -32,25 +32,18 @@
       }
 }
 
-@include toggleAllSSSPButton;
+@include toggleAllSSPButton;
+@include goToHome;
 
-#toggleSuccess {
-    width: 30%;
-    background: $netflix-black;
-    color: $netflix-white;
-    margin: 0 auto;
-    height: 200px;
-}
+@include CPTitle;
+@include MPNav;
 
-@include choosePrincipleTitle;
-@include metaPrincipleNav;
-
-@include subPrincipleNav;
-@include allSubPrinciples;
-@include subPrincipleContainer;
+@include SPNav;
+@include allSPBoxes;
+@include SPCR;
 
 .MP {
-    @include metaPrincipleLink;
+    @include MPLink;
     & a:hover {
         background: $linear-gradient-azn-nfx;
     }

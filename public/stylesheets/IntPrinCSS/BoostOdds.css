@@ -166,6 +166,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.comment span {
+  display: block;
+  margin: 5px auto 0 auto;
+  width: 40%;
+  background: #F5F5F1;
+  color: #221F1F;
+  padding: 5px;
+  font-size: .7rem;
+  border: 1px solid #221F1F; }
+  .comment span:before {
+    content: "COMMENT: ";
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #221F1F;
+    font-size: 1rem;
+    background: #F5F5F1;
+    margin-top: 15px; }
+
 #standardHeader {
   width: 100%;
   min-width: 700px;
@@ -233,35 +250,54 @@ table {
     margin: -20px -80px 0 auto;
     background: linear-gradient(to bottom right, #3B5998, #DFE3EE); }
 
-#toggleAllSSSP {
-  width: 15%;
-  margin: 10% 0 0 2%;
+.toggleAllSSP, .toggleAllSSP p {
+  width: 13%;
+  margin: .42% 0 0 2%;
   float: left;
   background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
-  padding: 16px 10px;
+  padding: 14px 10px;
   display: block;
   color: #F7F7F7;
   box-shadow: 0 0px 40px -5px rgba(0, 0, 0, 0.75);
   border: 1px solid #221F1F; }
-  #toggleAllSSSP:hover {
+  .toggleAllSSP:hover, .toggleAllSSP p:hover {
     background: #221F1F;
     cursor: pointer; }
-  #toggleAllSSSP:active {
+  .toggleAllSSP:active, .toggleAllSSP p:active {
     background: black;
     color: #F5F5F1; }
 
 #toggleSuccess {
-  width: 30%;
-  background: #221F1F;
-  color: #F5F5F1;
-  margin: 0 auto;
-  height: 200px; }
+  display: none;
+  width: 13%;
+  background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
+  padding: 20px 10px;
+  margin: .42% auto 0 auto;
+  color: #F7F7F7;
+  box-shadow: 0 0px 40px -5px rgba(0, 0, 0, 0.75);
+  border: 1px solid #221F1F; }
+
+#goToHome {
+  width: 13%;
+  float: right;
+  background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
+  padding: 25px 10px;
+  color: #F7F7F7;
+  box-shadow: 0 0px 40px -5px rgba(0, 0, 0, 0.75);
+  border: 1px solid #221F1F;
+  margin: .42% 2% 0 0; }
+  #goToHome:hover {
+    background: #221F1F;
+    cursor: pointer; }
+  #goToHome:active {
+    background: black;
+    color: #F5F5F1; }
 
 .CMPT, .CSPT {
   border: 2px solid #221F1F;
   border-color: #E50914;
   width: 50%;
-  margin: 15px auto;
+  margin: 18px auto;
   padding: 5px; }
 
 .PrinNav {
@@ -281,78 +317,131 @@ table {
     box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
     .PrinNav a:hover {
       background: #E50914; }
+    .PrinNav a:active {
+      background: #83050b; }
 
 .CSPC {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%; }
+  width: 95%;
+  margin: 0 auto; }
   .CSPC .SPC {
     margin: 10px;
+    width: 100%;
     padding: 10px;
     border: 1px solid #221F1F;
     background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
     color: #F5F5F1;
     box-shadow: 0 3px 3px black; }
+    .CSPC .SPC p {
+      position: relative;
+      top: 2.5%; }
+    .CSPC .SPC:hover {
+      background: #FF9900; }
+    .CSPC .SPC:active {
+      background: #995c00; }
 
 .SP {
   margin: 15px auto;
   padding: 10px;
   width: 80%;
-  height: auto;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
   color: #F5F5F1;
   box-shadow: 0 3px 3px black; }
 
-.SSP, .toggleSSSP {
+.SSP {
   width: 70%;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #FF9900, #146EB4);
   color: #221F1F;
   padding: 10px;
   margin: 15px auto;
-  box-shadow: 0 3px 3px black; }
+  box-shadow: 0 3px 3px black;
+  display: none; }
 
 .SSSP {
   width: 35%;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #EA4335, #4285F4);
-  color: #0a3658;
+  color: #F5F5F1;
   padding: 10px;
   margin: 15px auto;
-  box-shadow: 0 3px 3px black; }
+  box-shadow: 0 3px 3px black;
+  display: none; }
+
+.SSSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #F5F5F1;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black;
+  display: none; }
+
+.SSSSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #F5F5F1;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black;
+  display: none; }
 
 .SP {
   margin: 15px auto;
   padding: 10px;
   width: 80%;
-  height: auto;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #221F1F, #EA4335, #FF9900, #FF9900, #FF9900, #EA4335, #221F1F);
   color: #F5F5F1;
   box-shadow: 0 3px 3px black; }
 
-.SSP, .toggleSSSP {
+.SSP {
   width: 70%;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #FF9900, #146EB4);
   color: #221F1F;
   padding: 10px;
   margin: 15px auto;
-  box-shadow: 0 3px 3px black; }
+  box-shadow: 0 3px 3px black;
+  display: none; }
 
 .SSSP {
   width: 35%;
   border: 1px solid #221F1F;
   background: linear-gradient(to bottom right, #EA4335, #4285F4);
-  color: #0a3658;
+  color: #F5F5F1;
   padding: 10px;
   margin: 15px auto;
-  box-shadow: 0 3px 3px black; }
+  box-shadow: 0 3px 3px black;
+  display: none; }
+
+.SSSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #F5F5F1;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black;
+  display: none; }
+
+.SSSSSP {
+  width: 35%;
+  border: 1px solid #221F1F;
+  background: linear-gradient(to bottom right, #EA4335, #4285F4);
+  color: #F5F5F1;
+  padding: 10px;
+  margin: 15px auto;
+  box-shadow: 0 3px 3px black;
+  display: none; }
 
 .SPCR {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 0 auto; }
 
@@ -367,6 +456,8 @@ table {
   box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75); }
   .MP a:hover {
     background: #E50914; }
+  .MP a:active {
+    background: #83050b; }
 .MP a:hover {
   background: linear-gradient(to bottom right, #FF9900, red, #221F1F); }
 
