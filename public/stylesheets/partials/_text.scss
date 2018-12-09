@@ -10,3 +10,25 @@
         text-decoration: underline;
     }
 }
+
+.U {
+    text-decoration: underline;
+}
+
+.B {
+    font-weight: 900;
+}
+
+.M {
+    background: rgba($google-yellow, .9);
+    color: $netflix-black;
+}
+
+.C {
+    font-style: italic;
+}
+
+.RED {
+    color: $netflix-red;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

@@ -9,6 +9,7 @@
 @import '../partials/box';
 
 @include comment;
+@include UnderlineBold;
 
 #standardHeader { 
     @include principlesHeader;
@@ -36,10 +37,16 @@
 @include goToHome;
 
 @include CPTitle;
+@include AMPT;
 @include MPNav;
+
+#p1161 {
+    @include SSMP;    
+}
 
 @include SPNav;
 @include allSPBoxes;
+@include toggleBoxes;
 @include SPCR;
 
 .MP {

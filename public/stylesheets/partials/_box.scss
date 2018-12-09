@@ -12,8 +12,20 @@
         @include standard-2px-border;
         border-color: $netflix-red;
         width: 50%;
-        margin: 18px auto;
+        margin: 20px auto 14px auto;
         padding: 5px;
+    }
+}
+
+@mixin AMPT {
+    .AMPT {
+        width: 50%;
+        margin: 20px auto 10px auto;
+        padding: 5px;
+        background: $linear-gradient-azn-nfx-tilted;
+        color: $gold;
+        @include standard-2px-border;
+        border-color: $netflix-red;
     }
 }
 
@@ -22,7 +34,7 @@
             color: $netflix-black;
             background: $linear-gradient-azn-nfx;
             @include standard-1px-border;
-            margin: 40px;
+            margin: 20px;
             padding: 20px 10px;
             display: block;
             color: $facebook-light-grey;
@@ -99,7 +111,7 @@
      .SSP {
              width: 70%;
              @include standard-1px-border;
-             background: $linear-gradient-amazon;
+             background: $linear-gradient-nfx-fbk;
              color: $netflix-black;
              padding: 10px;
              margin: 15px auto;
@@ -107,6 +119,13 @@
              display: none;
          }
         }
+
+
+    @mixin SSMP {
+        & a {
+            margin: 0;
+        }
+    }
 
     @mixin SSSPBox {
         .SSSP {
@@ -125,7 +144,7 @@
         .SSSSP {
                 width: 35%;
                 @include standard-1px-border;
-                background: $linear-gradient-google-rb;
+                background: $netflix-red;
                 color: $netflix-white;
                 padding: 10px;
                 margin: 15px auto;
@@ -138,7 +157,7 @@
         .SSSSSP {
                 width: 35%;
                 @include standard-1px-border;
-                background: $linear-gradient-google-rb;
+                background: black;
                 color: $netflix-white;
                 padding: 10px;
                 margin: 15px auto;
@@ -225,23 +244,59 @@
 }
 
 @mixin comment {
+    // Include .comment for parent tag of span which is wrapping comment text
+    //Don't forget <br> before span tag.
     .comment span {
-        display: block;
-        margin: 5px auto 0 auto;
-        width: 40%;
-        background: $netflix-white;
+        display: inline;
+        visibility: hidden;
         color: $netflix-black;
-        padding: 5px;
-        font-size: .7rem;
-        @include standard-1px-border;
+        padding: 12.5px 2.5px;
+        font-size: .5rem;
+        font-weight: 400;
 
         &:before {
-            content: "COMMENT: ";
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            color: $netflix-black;
-            font-size: 1rem;
-            background: $netflix-white;
-            margin-top: 15px;
+            content: "Comment: ";
+            display: block;
+            font-weight: 700;
+        }
+
+        &:hover {
+            visibility: visible;
+        }
+    }
+}
+
+@mixin toggleBoxes {
+    button {
+        &:hover {
+            cursor: pointer;
+            background: $google-blue;
+        }
+
+        &:active {
+            background: darken( $google-blue, 10% );
+        }
+    }
+
+    .toggleItem {
+        display: none;
+        @include standard-1px-border;
+        padding: 4px;
+        width: 40%;
+        margin: 6px auto;
+    }   
+
+    .toggleAllBtn {
+        width: 72%;
+        margin: 7px auto;
+        background: $linear-gradient-nfx-grb;
+        padding: 25px 10px;
+        color: $facebook-light-grey;
+        @include BS-slight-behind;
+        @include standard-1px-border;
+        
+        & + p {
+        display: none;
         }
     }
 }

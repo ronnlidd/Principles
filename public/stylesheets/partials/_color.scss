@@ -5,6 +5,7 @@ $regent-st-blue : #add8e6;
 $river-bed      : #48525c;
 $yellow-orange  : #ffa949;
 $mandy          : #ED616D;
+$gold           : rgb(255, 217, 0);
 
 // Company-colors: https://www.w3schools.com/colors/colors_brands.asp
 $netflix-red: #E50914;
@@ -25,13 +26,16 @@ $google-yellow: #FBBC05;
 $google-green: #34A853;
 $google-red: #EA4335;
 
-$linear-gradient-azn-nfx: linear-gradient(to bottom right, $amazon-orange, red, $netflix-black);
+$linear-gradient-azn-nfx: linear-gradient(to bottom right, $amazon-orange, $netflix-red, $netflix-black);
 $linear-gradient-facebook-dark: linear-gradient(to bottom right, $facebook-dark-blue, $facebook-dark-grey);
 $linear-gradient-nfx: linear-gradient(to bottom right, $netflix-black, $netflix-red);
-$linear-gradient-nfx-grb: linear-gradient(10deg, gold, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-red, $netflix-red);
+$linear-gradient-nfx-grb: linear-gradient(10deg, $gold, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-black, $netflix-red);
 $linear-gradient-rb-m-rsb: linear-gradient(to bottom right, $river-bed, $mandy, $regent-st-blue);
 $linear-gradient-rb-rsb: linear-gradient(to bottom right, $river-bed, $regent-st-blue);
 $linear-gradient-nagn: linear-gradient(to bottom right, $netflix-black, $google-red, $amazon-orange, $amazon-orange, $amazon-orange, $google-red, $netflix-black);
 $linear-gradient-google-gy: linear-gradient(to bottom right, $google-green, $google-yellow);
 $linear-gradient-google-rb: linear-gradient(to bottom right, $google-red, $google-blue);
 $linear-gradient-amazon: linear-gradient(to bottom right, $amazon-orange, $amazon-blue);
+$linear-gradient-nfx-fbk: linear-gradient(to bottom right, $facebook-light-blue, $netflix-white);
+$linear-gradient-nfx-grb-xtr-rvs: linear-gradient(35deg, $gold, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-white, $netflix-red);
+$linear-gradient-azn-nfx-tilted: linear-gradient(to bottom left, $amazon-orange, $netflix-black, $netflix-black, $netflix-red);

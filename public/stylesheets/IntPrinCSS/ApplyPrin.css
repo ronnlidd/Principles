@@ -82,47 +82,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif; }
+.U {
+  text-decoration: underline; }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+.B {
+  font-weight: 900; }
 
-body {
-  line-height: 1; }
+.M {
+  background: rgba(251, 188, 5, 0.9);
+  color: #221F1F; }
 
-ol, ul {
-  list-style: none; }
+.C {
+  font-style: italic; }
 
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.RED {
+  color: #E50914;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -165,6 +140,65 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.U {
+  text-decoration: underline; }
+
+.B {
+  font-weight: 900; }
+
+.M {
+  background: rgba(251, 188, 5, 0.9);
+  color: #221F1F; }
+
+.C {
+  font-style: italic; }
+
+.RED {
+  color: #E50914;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 #standardHeader {
   width: 100%;
@@ -194,7 +228,7 @@ table {
     #standardHeader li:hover, #standardHeader li :focus-within {
       cursor: pointer; }
     #standardHeader li a {
-      background: linear-gradient(10deg, gold, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914, #E50914);
+      background: linear-gradient(10deg, #ffd900, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #221F1F, #E50914);
       margin: 5px 30px;
       padding: 16px 10px;
       display: block;
@@ -224,7 +258,7 @@ table {
     width: 100%; }
     #standardHeader ul li ul li a {
       margin: 1px;
-      background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
+      background: linear-gradient(to bottom right, #FF9900, #E50914, #221F1F);
       border: 1px solid #221F1F; }
       #standardHeader ul li ul li a:hover {
         background: #b40710; }
@@ -237,7 +271,7 @@ table {
   border: 2px solid #221F1F;
   border-color: #E50914;
   width: 50%;
-  margin: 18px auto;
+  margin: 20px auto 14px auto;
   padding: 5px; }
 
 .PrinNav {
@@ -248,9 +282,9 @@ table {
   box-shadow: 0 3px 3px black; }
   .PrinNav a {
     color: #221F1F;
-    background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
+    background: linear-gradient(to bottom right, #FF9900, #E50914, #221F1F);
     border: 1px solid #221F1F;
-    margin: 40px;
+    margin: 20px;
     padding: 20px 10px;
     display: block;
     color: #F7F7F7;
@@ -293,9 +327,9 @@ table {
 
 .MP a {
   color: #221F1F;
-  background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
+  background: linear-gradient(to bottom right, #FF9900, #E50914, #221F1F);
   border: 1px solid #221F1F;
-  margin: 40px;
+  margin: 20px;
   padding: 20px 10px;
   display: block;
   color: #F7F7F7;
@@ -305,7 +339,7 @@ table {
   .MP a:active {
     background: #83050b; }
 .MP a:hover {
-  background: linear-gradient(to bottom right, #FF9900, red, #221F1F); }
+  background: linear-gradient(to bottom right, #FF9900, #E50914, #221F1F); }
 
 footer {
   height: auto;
@@ -327,7 +361,7 @@ footer {
     text-decoration: underline; }
   footer a {
     color: #221F1F;
-    background: linear-gradient(to bottom right, #FF9900, red, #221F1F);
+    background: linear-gradient(to bottom right, #FF9900, #E50914, #221F1F);
     border: 1px solid #221F1F;
     color: #F7F7F7;
     box-shadow: 0px 5px 17px -3px rgba(0, 0, 0, 0.75);
