@@ -1,4 +1,4 @@
-window.onload = function () {
+$(function () {
    
   $(".toggleAllSSP").click(function () {
       $(".SSP").toggle();
@@ -8,7 +8,7 @@ window.onload = function () {
       $(".toggleItem").toggle();
     });
 
-  };
+  });
 
   function oneElmToggle(elm) {
     const display = elm.nextSibling.style.display;
