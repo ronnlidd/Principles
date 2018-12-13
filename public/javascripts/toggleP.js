@@ -7,7 +7,6 @@ $(function () {
     $(".toggleAllBtn").click(function () {
       $(".toggleItem").toggle();
     });
-
   });
 
   function oneElmToggle(elm) {
@@ -20,15 +19,19 @@ $(function () {
     }
   }
   
-  function oneChildToggle(elm) {
-    const display = elm.firstChild.style.display;
-    if (display === "none" || display === "") {
-      elm.firstChild.style.display = "block";
-    }
-    else {
-      elm.firstChild.style.display = "none";
-    }
-  }
+
+
+
+  // FIXXX YOU
+  // function oneChildToggle(elm) {
+  //   const display = elm.firstChild.style.display;
+  //   if (display === "none" || display === "") {
+  //     elm.firstChild.style.display = "block";
+  //   }
+  //   else {
+  //     elm.firstChild.style.display = "none";
+  //   }
+  // }
 
 
 
